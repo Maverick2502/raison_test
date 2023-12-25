@@ -1,23 +1,52 @@
 @import "../../styles/variables";
 
 .header {
-  text-align: center;
-
   display: flex;
   flex-direction: column;
+
+  text-align: center;
 
   gap: 24px;
 
   margin-bottom: 56px;
 
+  @media (max-width: $breakpoint-mobile) {
+    gap: 16px;
+
+    margin-bottom: 40px;
+  }
+
   & > h1 {
     font-size: 48px;
+    font-style: normal;
     font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1.44px;
 
     margin: 0;
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: -0.588px;
+    }
   }
 
   & > span {
     font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.198px;
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: -0.176px;
+    }
   }
 }

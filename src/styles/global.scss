@@ -38,7 +38,6 @@ body {
   font-family: "DM Sans", system-ui, sans-serif;
   background-color: $bg-color;
   color: $primary-color;
-  max-width: 100vw;
 }
 
 main {
@@ -47,4 +46,9 @@ main {
 
   padding: $padding-desktop;
   margin: 0 auto;
+
+  @media (max-width: $breakpoint-mobile) {
+    max-width: $width-mobile;
+    padding: $padding-mobile;
+  }
 }
