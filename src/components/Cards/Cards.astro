@@ -6,15 +6,16 @@ import "./Cards.scss";
 import { locationsInfo } from "./data";
 ---
 
-<section class="banner">
-  <Image class="banner__image" src={logo} alt="" />
-  <ul class="container">
+<section>
+  <Image class="image" src={logo} alt="World's map" />
+
+  <ul class="container-card">
     {
       locationsInfo.map((item) => {
         return (
           <li class="card">
             <div class="card__header">
-              <h2>{item.city}</h2>
+              <h3 aria-level="3">{item.city}</h3>
               <Image
                 width={40}
                 height={40}
@@ -24,12 +25,14 @@ import { locationsInfo } from "./data";
               />
             </div>
 
-            <div class="card__info">
-              <span>{item.telephone_number}</span>
-              <span>{item.email}</span>
-            </div>
+            <p class="card__info">
+              <a href={`tel:${item.telephone_number}`}>
+                {item.telephone_number}
+              </a>
+              <a href={`mailto:${item.email}`}>{item.email}</a>
+            </p>
 
-            <span class="card__footer">{item.address}</span>
+            <p class="card__footer">{item.address}</p>
           </li>
         );
       })
