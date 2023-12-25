@@ -9,8 +9,8 @@
   max-height: 706px;
 
   @media (max-width: $breakpoint-mobile) {
-    width: 310px;
-    height: 202px;
+    width: 100%;
+    max-width: 310px;
 
     margin-bottom: 40px;
   }
@@ -47,13 +47,17 @@
     width: 528px;
 
     @media (max-width: $breakpoint-mobile) {
-      width: 310px;
+      width: 100%;
+      max-width: 310px;
       padding: 16px;
     }
   }
 
   @media (max-width: $breakpoint-mobile) {
-    width: 310px;
+    width: 100%;
+
+    max-width: 310px;
+
     padding: 16px;
 
     max-height: 176px;

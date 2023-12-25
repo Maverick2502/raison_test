@@ -38,17 +38,22 @@ body {
   font-family: "DM Sans", system-ui, sans-serif;
   background-color: $bg-color;
   color: $primary-color;
+
+  min-height: 100vh;
 }
 
 main {
+  width: 100%;
   max-width: $width-desktop;
-  min-height: 100vh;
 
   padding: $padding-desktop;
+
   margin: 0 auto;
 
   @media (max-width: $breakpoint-mobile) {
+    width: 100%;
     max-width: $width-mobile;
+
     padding: $padding-mobile;
   }
 }
