@@ -6,9 +6,8 @@ import "./Cards.scss";
 import { locationsInfo } from "./data";
 ---
 
-<Image src={logo} alt="" />
-
-<div>
+<section class="banner">
+  <Image class="banner__image" src={logo} alt="" />
   <ul class="container">
     {
       locationsInfo.map((item) => {
@@ -36,4 +35,4 @@ import { locationsInfo } from "./data";
       })
     }
   </ul>
-</div>
+</section>

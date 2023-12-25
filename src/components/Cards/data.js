@@ -41,6 +41,13 @@ const locationsInfo = [
     address: "1 Chome Higashiyama, Kanazawa, Ishikawa 920-0831, Japan",
     icon_path: japan,
   },
+  {
+    city: "Kanazawa",
+    telephone_number: "+81 76 220 2469",
+    email: "kanazawa@lg.jp",
+    address: "1 Chome Higashiyama, Kanazawa, Ishikawa 920-0831, Japan",
+    icon_path: japan,
+  },
 ];
 
 export { locationsInfo };
