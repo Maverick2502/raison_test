@@ -56,4 +56,11 @@ main {
 
     padding: $padding-mobile;
   }
+
+  @media (max-width: $breakpoint-mobile-sm) {
+    width: 100%;
+    max-width: $width-mobile;
+
+    padding: $padding-mobile-sm;
+  }
 }

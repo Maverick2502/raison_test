@@ -37,7 +37,7 @@
   width: 344px;
 
   padding: 24px;
-  height: 208px;
+  min-height: 208px;
 
   border-radius: 16px;
   background: #fff;
@@ -45,16 +45,17 @@
 
   &:nth-child(-n + 2) {
     width: 528px;
+    min-height: 208px;
 
     @media (max-width: $breakpoint-mobile) {
-      // width: 100%;
+      width: 100%;
       max-width: 310px;
       padding: 16px;
     }
   }
 
   @media (max-width: $breakpoint-mobile) {
-    // width: 100%;
+    width: 100%;
 
     max-width: 310px;
 
