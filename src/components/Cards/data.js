@@ -9,8 +9,7 @@ const locationsInfo = [
     city: "Damietta",
     telephone_number: "+20 0219033",
     email: "alexbank@damietta.com",
-    address:
-      "3 Al Togari, Qism Damietta, Damietta, Damietta Governorate 34511, Egypt",
+    address: "3 Al Togari, Qism Damietta, Damietta, Governorate 34511, Egypt",
     icon_path: egypt,
   },
   {
