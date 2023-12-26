@@ -47,14 +47,14 @@
     width: 528px;
 
     @media (max-width: $breakpoint-mobile) {
-      width: 100%;
+      // width: 100%;
       max-width: 310px;
       padding: 16px;
     }
   }
 
   @media (max-width: $breakpoint-mobile) {
-    width: 100%;
+    // width: 100%;
 
     max-width: 310px;
 
